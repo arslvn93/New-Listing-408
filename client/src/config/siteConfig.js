@@ -1,7 +1,7 @@
 /**
  * Site Configuration
  * This file contains all configurable content for the website
- * Last updated: 2025-11-05T20:25:17.150Z
+ * Last updated: 2025-11-05T20:28:02.346Z
  */
 
 // contactInfo configuration
@@ -69,17 +69,7 @@ export const galleryImages = [
   }
 ];
 
-// heroVideo configuration
-// export const heroVideo = {
-//   url: "",
-//   type: "video/mp4",
-//   autoplay: true,
-//   loop: true,
-//   muted: true,
-//   playsInline: true
-// };
-
-// homeShowcaseSections configuration  
+// homeShowcaseSections configuration
 export const homeShowcaseSections = [
   {
     id: "section1",
@@ -109,15 +99,15 @@ export const homeShowcaseSections = [
 
 // neighborhood configuration
 export const neighborhood = {
-  name: "Fullerton",
+  name: "Fairway Village",
   city: "Fullerton",
-  description: "Fullerton's premier destination for culture, dining, and urban living.",
+  description: "Fairway Village places you close to Fullerton’s best outdoor and cultural destinations. The area balances family-friendly green spaces and trails with a revitalized historic downtown that offers restaurants, nightlife and local museums. It’s an ideal location for buyers who want quick access to parks, community events and a lively small-city center.",
   highlights: [
-    "Steps to theaters, dining, and entertainment venues",
-    "Direct access to PATH underground walkway", 
-    "TTC subway and streetcar connections",
-    "Walk to financial district and shopping",
-    "Vibrant urban lifestyle with excellent walk score"
+    "Craig Regional Park offers fishing, sports facilities, shaded picnic areas, and well-maintained grounds for outdoor activities.",
+    "Fullerton's revitalized historic downtown is a major dining and nightlife hub with diverse restaurants, wine bars, and live music venues.",
+    "The Fullerton Museum Center showcases local history and culture, including exhibits on famous guitar maker Leo Fender.",
+    "The Redwood Creek Challenge Trail in the Fullerton Arboretum provides a scenic, family-friendly nature walk with play areas, wildlife viewing, and botanical gardens.",
+    "Easy access to nearby attractions and regional parks for weekend recreation and family outings."
   ]
 };
 
@@ -125,45 +115,59 @@ export const neighborhood = {
 export const neighborhoodAmenities = [
   {
     id: 1,
-    name: "Local Grocery Store",
-    distance: "0.2 miles",
+    name: "Brea Mall Transit Center",
+    distance: "",
     category: "shopping",
     iconName: "ShoppingBag"
   },
   {
     id: 2,
-    name: "Nearby Park",
-    distance: "0.1 miles", 
+    name: "Craig Regional Park",
+    distance: "",
     category: "recreation",
     iconName: "Leaf"
   },
   {
     id: 3,
-    name: "Public School",
-    distance: "0.6 miles",
-    category: "education", 
+    name: "Laguna Road School Park",
+    distance: "",
+    category: "education",
     iconName: "School"
   },
   {
     id: 4,
-    name: "Fine Dining",
-    distance: "0.2 miles",
+    name: "T C's Yummies",
+    distance: "",
     category: "dining",
-    iconName: "Wine"
+    iconName: "Coffee"
   },
   {
     id: 5,
-    name: "Casual Dining",
-    distance: "0.4 miles",
+    name: "Cookin' Crab",
+    distance: "",
     category: "dining",
     iconName: "Utensils"
   },
   {
     id: 6,
-    name: "Transit Station",
-    distance: "0.4 miles",
+    name: "Fullerton Station (Amtrak / Transit Station)",
+    distance: "",
     category: "transportation",
-    iconName: "Train"
+    iconName: "Car"
+  },
+  {
+    id: 7,
+    name: "Fullerton concerts in the park",
+    distance: "",
+    category: "recreation",
+    iconName: "Users"
+  },
+  {
+    id: 8,
+    name: "Fullerton Historic Downtown Business District",
+    distance: "",
+    category: "business",
+    iconName: "Wifi"
   }
 ];
 
@@ -172,34 +176,26 @@ export const neighborhoodStats = [
   {
     id: 1,
     title: "Walk Score",
-    value: "95/100",
-    caption: "Walker's Paradise",
+    value: "38/100",
+    caption: "Car-Dependent",
     iconName: "BadgeCheck",
     color: "bg-green-500"
   },
   {
     id: 2,
-    title: "Transit Score", 
-    value: "94/100",
-    caption: "Excellent Transit",
+    title: "Transit Score",
+    value: "23/100",
+    caption: "Minimal Transit",
     iconName: "Compass",
     color: "bg-blue-500"
   },
   {
     id: 3,
-    title: "School Rating",
-    value: "8/10", 
-    caption: "Great Schools",
-    iconName: "School",
+    title: "Bike Score",
+    value: "14/100",
+    caption: "Somewhat Bikeable",
+    iconName: "Compass",
     color: "bg-indigo-500"
-  },
-  {
-    id: 4,
-    title: "Commute Time",
-    value: "8 min",
-    caption: "To Financial District",
-    iconName: "Clock", 
-    color: "bg-amber-500"
   }
 ];
 
@@ -219,7 +215,7 @@ export const openHouseBenefits = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "Located within the Fullerton Joint Union High School District and Fullerton School District, known for strong academic programs. Nearby schools include Laguna Road Elementary, Parks Junior High, and Sunny Hills High School (consistently one of the area’s top-rated high schools).",
     iconName: "GraduationCap"
   },
@@ -253,7 +249,12 @@ export const openHouseDetails = {
   ctaText: "RSVP for Open House",
   virtualTourAvailable: true,
   virtualTourUrl: "https://listtosoldmedia.com/media/download2.asp?9E0BF1FC27B54F6184DBDBA5B320C10D",
-  allOpenHouses: [{"date":"Wednesday, November 5, 2025","time":"2:00 PM - 4:00 PM"}]
+  allOpenHouses: [
+    {
+      date: "Wednesday, November 5, 2025",
+      time: "2:00 PM - 4:00 PM"
+    }
+  ]
 };
 
 // packageItems configuration
@@ -272,7 +273,7 @@ export const packageItems = [
   },
   {
     id: 3,
-    title: "School District Information", 
+    title: "School District Information",
     description: "Located within the Fullerton Joint Union High School District and Fullerton School District, known for strong academic programs. Nearby schools include Laguna Road Elementary, Parks Junior High, and Sunny Hills High School (consistently one of the area’s top-rated high schools).",
     iconName: "GraduationCap"
   },
@@ -316,7 +317,7 @@ export const property = {
   status: "For Sale",
   description: "The moment you enter, the soaring vaulted ceilings and wall-to-wall windows create an open, airy atmosphere that instantly impresses. The natural light and sense of space make the home feel grand yet welcoming.",
   shortDescription: "4 BEDS + 3 BATHS in Fullerton",
-longDescription: "Detached home within the prestigious, guard-gated Fairway Village — a rare find in this community.  Spacious 2,373 sq ft layout with 4 bedrooms and 3 bathrooms, including a main-floor bedroom and full bath ideal for guests or multigenerational living.  Vaulted ceilings and expansive windows flooding the home with natural light.  Private backyard retreat featuring a spa jacuzzi with a soothing waterfall and an oversized patio for entertaining.  Access to resort-style amenities: 24-hour security, walking trails, tennis courts, pools, clubhouse, and RV parking.",
+  longDescription: "Detached home within the prestigious, guard-gated Fairway Village — a rare find in this community.  Spacious 2,373 sq ft layout with 4 bedrooms and 3 bathrooms, including a main-floor bedroom and full bath ideal for guests or multigenerational living.  Vaulted ceilings and expansive windows flooding the home with natural light.  Private backyard retreat featuring a spa jacuzzi with a soothing waterfall and an oversized patio for entertaining.  Access to resort-style amenities: 24-hour security, walking trails, tennis courts, pools, clubhouse, and RV parking.",
   mainFeatures: [],
   propertyType: "Detached",
   heroImage: "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/1762374081484-23-19_513_Pebbl.jpg",
@@ -338,7 +339,7 @@ export const siteBranding = {
   favicon: "/favicon.ico",
   colors: {
     primary: "#D9A566",
-    primaryDark: "#8B6839", 
+    primaryDark: "#8B6839",
     primaryLight: "#E6C38C",
     dark: "#111111",
     light: "#FFFFFF"
@@ -366,7 +367,7 @@ export const testimonials = [
   {
     id: 1,
     name: "David Chen",
-    role: "Recent Homebuyer", 
+    role: "Recent Homebuyer",
     content: "Mateo Jackson provided exceptional service and found us exactly what we were looking for in Fullerton.",
     avatar: "https://randomuser.me/api/portraits/men/22.jpg"
   },
@@ -379,9 +380,10 @@ export const testimonials = [
   },
   {
     id: 3,
-    name: "Mark Williams", 
+    name: "Mark Williams",
     role: "Neighborhood Resident",
     content: "Living in this area, you appreciate the convenience and lifestyle. Mateo Jackson knows the market incredibly well.",
     avatar: "https://randomuser.me/api/portraits/men/35.jpg"
   }
 ];
+
